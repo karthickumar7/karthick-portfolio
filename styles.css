@@ -1,0 +1,142 @@
+body {
+    background: #0f0f0f;
+    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+/* LEFT */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* IMAGE */
+.profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+/* TEXT */
+.text {
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.text1 {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* RIGHT */
+.subtext {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+/* HERO */
+.hero {
+    padding: 60px 40px;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #bbbbbb;
+}
+
+/* ABOUT */
+.about {
+    padding: 40px;
+    max-width: 800px;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.about p {
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: aqua;
+}
+
+/* ANIMATION */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .about {
+        padding: 30px;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+}
